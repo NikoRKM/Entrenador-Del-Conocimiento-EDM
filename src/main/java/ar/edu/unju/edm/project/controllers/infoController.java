@@ -4,34 +4,28 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class UserController {
+public class infoController {
 
-	@GetMapping("/inscription")
-	public String inscribeUser(){
+    @GetMapping("/inscription")
+    public String getInscription() {
 
         return "inscription";
     }
 
     @GetMapping("/matriculation")
-    public String matriculateUser(){
+    public String getMatriculation() {
 
         return "matriculation";
     }
 
     @GetMapping("/contact")
-    public String getContact(){
+    public String getContact() {
 
         return "contact";
     }
 
-    @GetMapping("/recreationalActivities")
-    public String getRecreationalActivities(){
-
-        return "recreationalActivities";
-    }
-
     @GetMapping("/studyMaterial")
-    public String getStudyMaterial(){
+    public String getStudyMaterial() {
 
         return "studyMaterial";
     }
