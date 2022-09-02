@@ -1,36 +1,38 @@
 package ar.edu.unju.edm.project.controllers;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+@Controller
 public class UserController {
 
 	@GetMapping("/inscription")
 	public String inscribeUser(){
 
-        return "null";
+        return "inscription";
     }
 
     @GetMapping("/matriculation")
     public String matriculateUser(){
 
-        return "null";
+        return "matriculation";
     }
 
     @GetMapping("/contact")
     public String getContact(){
 
-        return "null";
+        return "contact";
     }
 
     @GetMapping("/recreationalActivities")
     public String getRecreationalActivities(){
 
-        return "null";
+        return "recreationalActivities";
     }
 
     @GetMapping("/studyMaterial")
     public String getStudyMaterial(){
 
-        return "null";
+        return "studyMaterial";
     }
 }
