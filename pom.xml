@@ -41,7 +41,41 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+	
+
+	<dependency>
+			<groupId> org.webjars </groupId>
+			<artifactId> bootstrap </artifactId>
+			<version> 5.0.0 </version>
+		</dependency>
+		
+		<dependency>
+			<groupId> org.webjars </groupId>
+			<artifactId> jquery </artifactId>
+			<version> 3.5.1 </version>
+		</dependency>
+		
+		<dependency>
+			<groupId> org.webjars </groupId>
+			<artifactId> popper.js </artifactId>
+			<version> 1.16.0 </version>
+		</dependency>
+		
+		<dependency>
+			<groupId> org.webjars </groupId>
+			<artifactId> font-awesome </artifactId>
+			<version> 5.11.2 </version>
+		</dependency>
+
+		<dependency>
+			<groupId> org.hibernate.validator </groupId>
+			<artifactId> hibernate-validator </artifactId>
+			<!-- <version> 5.11.2 </version> -->
+		</dependency>
+	
 	</dependencies>
+
+
 
 	<build>
 		<plugins>

@@ -5,9 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-    
+
     @GetMapping({ "/", "/index", "/home" })
-	public String getIndex() {
+    public String getIndex() {
         return "index";
+    }
+
+    @GetMapping("/recreationalActivities")
+    public String getRecreationalActivities() {
+
+        return "recreationalActivities";
     }
 }
