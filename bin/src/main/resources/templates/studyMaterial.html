@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/logo_P.png">
+    <title>Proyecto</title>
+    <link th:href="@{css/styles.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div th:insert="/layouts/header :: header"></div>
+    <div th:insert="/layouts/navegation :: navegation"></div>
+
+    <h1> Working ...</h1>
+
+    <div th:insert="/layouts/footer :: footer"></div>
+
+</body>
+
+</html>
