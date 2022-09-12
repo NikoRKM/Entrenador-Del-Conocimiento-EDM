@@ -8,19 +8,86 @@
     <link th:href="@{css/main.css}" rel="stylesheet" type="text/css" />
     <link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    
+    
+    
+    
+    
+    <!-- Compressed Styles -->
+	<link href="/css/slides.min.css?41331" rel="stylesheet" type="text/css">
+
+	<!-- Custom Styles -->
+	<!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
+
+	<!-- jQuery 3.3.1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Compressed Scripts -->
+	<script src="/js/slides.min.js?41331" type="text/javascript"></script>
+
+	<!-- Custom Scripts -->
+	<!-- <script src="js/custom.js" type="text/javascript"></script> -->
+
+	<!-- Fonts and Material Icons -->
+	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
+ 
 </head>
 
-<body>
+<body  class="chain simplifiedMobile" >
 
     <div th:insert="/layouts/header :: header"></div>
     <div th:insert="/layouts/navegation :: navegation"></div>
+	
+	
+	
+	<!-- Navigation -->
+<nav class="side pole">
+  <div class="navigation">
+    <ul></ul>
+  </div>
+</nav>	
 
-    <h1> Working ...</h1>
+
+<!-- Slide 5 (#85) -->
+<section class="slide fade-6 kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="fix-7-12">
+          <h1 class="ae-1">Actividades Recreativas</h1>
+          <ul class="grid grid-85 equal margin-top-5 ae-2 fromCenter" data-equal-collapse-width="767">
+            <li class="col-6-12 col-tablet-1-2 col-phablet-1-1 margin-bottom-2 ae-3">
+              <div class="pad" style="background: #F5FBFE">
+                <h3>Wordle</h3>
+               <div class="price ae-5 done">
+    				<img src="/img/wordle1000x550.jpg" data-action="zoom" class="shadow rounded ae-8 done" alt="Image">
+			  </div>
+                <a href="https://wordle.danielfrg.com/" class="button green gradient wide cropSides cropBottom ae-7 done" target="blank" rel="noreferrer noopener">Jugar</a>
+              </div>
+            </li>
+            <li class="col-6-12 col-tablet-1-2 col-phablet-1-1 ae-4">
+             <div class="pad">
+                <h3>Pacman</h3>
+                <div class="price ae-6 done">
+                <img src="/img/pacman1000x550.jpg" data-action="zoom" class="shadow rounded ae-8 done" alt="Image">
+				</div>
+                <a href="https://g.co/kgs/8bz2FA" target="blank" rel="noreferrer noopener" class="button blue gradient wide cropSides cropBottom ae-8 done">Jugar</a>
+              </div>
+            </li>
+          </ul>
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(/img/background/edm2.png)"></div>
+</section>
 
     <div th:insert="/layouts/footer :: footer"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="../../js/main.js"></script>
+	<script src="/js/main.js"></script>
 
 </body>
 
