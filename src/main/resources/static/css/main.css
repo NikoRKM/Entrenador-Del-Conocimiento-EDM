@@ -240,4 +240,86 @@
 	.menu #btn_menu:hover {
 		background: rgba(255, 255, 255, 0.2);
 	}
+	
+	.row1 {
+    display: flex;
+    width: 100%;
+}
+/*
+/* news feed 
+
+#news-feed .row1 .left-col {
+    width: 65%;
+}
+
+#news-feed .row1 .right-col {
+    width: 35%;
+}
+
+#news-feed article {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3%;
+    height: 100%;
+}
+
+#news-feed .row1 .left-col article {
+    height: 100%;
+}
+
+#news-feed .row1 .right-col article {
+    height: 50%;
+}
+
+#news-feed h1 {
+    margin: 25px 0 20px 0;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 36px; 
+}
+
+#news-feed h2 {
+    color: black;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+#news-feed p {
+    flex-grow: 1;
+    font-size: 20px;
+    font-family: LibreFranklin-Thin, sans-serif;
+    color: grey;
+}
+
+#news-feed figure {
+    margin: 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#news-feed figure img {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#news-feed figure figcaption {
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: LibreFranklin-Bold, sans-serif;
+    background: rgb(0, 0, 0, 0.6);
+
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
+#news-feed figure:hover figcaption {
+    background: black;
+}
+
+#news-feed figure figcaption span {
+    color: white;
+}*/
 }
