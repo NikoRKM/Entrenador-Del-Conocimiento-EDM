@@ -16,4 +16,16 @@ public class MainController {
 
         return "recreationalActivities";
     }
+
+    @GetMapping("/literatureMaterial")
+    public String getLiteratureMaterial() {
+
+        return "literatureMaterial";
+    }
+
+    @GetMapping("/mathsMaterial")
+    public String getMathsMaterial() {
+
+        return "mathsMaterial";
+    }
 }
