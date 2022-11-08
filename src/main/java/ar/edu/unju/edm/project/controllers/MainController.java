@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
-    @GetMapping({ "/", "/index", "/home" })
+    @GetMapping({ "/", "/index", "/home", "/menu" })
     public String getIndex() {
         return "index";
     }
@@ -15,5 +15,17 @@ public class MainController {
     public String getRecreationalActivities() {
 
         return "recreationalActivities";
+    }
+
+    @GetMapping("/literatureMaterial")
+    public String getLiteratureMaterial() {
+
+        return "literatureMaterial";
+    }
+
+    @GetMapping("/mathsMaterial")
+    public String getMathsMaterial() {
+
+        return "mathsMaterial";
     }
 }
