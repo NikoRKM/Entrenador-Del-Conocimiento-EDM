@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.container {
+	padding-bottom: 50px;
+}
+
 .container__menu {
   width: 100%;
   /* height: 100%; */
@@ -119,21 +123,6 @@
 
 .menu #btn_menu {
   display: none;
-}
-
-#footer-main {
-  background-color: #000;
-  color: #fff;
-  position: fixed;
-  bottom: -21%;
-  overflow: auto;
-  /* justify-content: center; */
-  margin: 10%;
-  /* display: flex; */
-  /* justify-content: center; */
-  z-index: 100;
-  padding: 3px;
-  border-radius: 10%;
 }
 
 /*Haciendo la p�gina Responsive*/
@@ -378,4 +367,127 @@ a {
 }
 #demos .button:hover {
   background: #f5b120;
+}
+
+/*:::::Pie de Pagina*/
+
+/*#footer-main {
+  /*background-color: #000;*/
+  /*color: #fff;
+  position: absolute;
+  bottom: 0;
+  overflow: auto;*/
+  /* justify-content: center; */
+  /*margin: 10%;*/
+  /* display: flex; */
+  /* justify-content: center; */
+  /*z-index: 50;
+  /*padding: 3px;*/
+/*}*/
+
+.footer{
+	color: #fff;
+    overflow: auto;
+    width: 100%;
+    background-color: #0a141d;
+    z-index: 50;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+}
+/*
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .grupo-1 .box figure img{
+    width: 75px;
+}
+*/
+.footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer .grupo-1 .box h3{
+    color: #fff;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.footer .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    margin-right: 5px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer .grupo-1 .red-social a:hover{
+    color: #c45959;
+}
+.footer .grupo-2{
+    background-color: #0a1a2a;
+    padding: 10px 5px;
+    text-align: center;
+    color: #fff;
+}
+.footer .grupo-2 small{
+    font-size: 10px;
+}
+@media screen and (max-width:800px){
+    .footer {
+      z-index: 49;
+    }
+    
+    .footer .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px 25px;
+      padding: 15px 0px;
+    }
+    
+    .footer .grupo-1 .box h2{
+	    margin-bottom: 10px;
+	    font-size: 14px;
+	}
+	
+	.footer .grupo-1 .box h3{
+	    margin-top: 2px;
+	    margin-bottom: 5px;
+	    font-size: 11px;
+	}
+	
+	.footer .grupo-1 .box p{
+	    color: #efefef;
+	    margin-bottom: 5px;
+	    font-size: 9px;
+	}
+	    
+    .footer .grupo-2 small{
+      font-size: 9px;
+	}
 }
