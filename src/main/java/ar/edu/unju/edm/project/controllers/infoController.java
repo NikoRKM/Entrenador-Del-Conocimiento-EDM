@@ -11,7 +11,7 @@ public class infoController {
 
         return "contact";
     }
-    
+
     @GetMapping("/news")
     public String getNews() {
 

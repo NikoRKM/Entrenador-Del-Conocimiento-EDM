@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/logo_edm_sin_fondo.png">
+    <title>Proyecto</title>
+    <link th:href="@{css/main.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+
+
+
+
+    <!-- Compressed Styles -->
+    <link href="/css/slides.min.css?41331" rel="stylesheet" type="text/css">
+
+    <!-- Custom Styles -->
+    <!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- jQuery 3.3.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compressed Scripts -->
+    <script src="/js/slides.min.js?41331" type="text/javascript"></script>
+
+    <!-- Custom Scripts -->
+    <!-- <script src="js/custom.js" type="text/javascript"></script> -->
+
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons" />
+
+</head>
+
+<body class="chain simplifiedMobile">
+
+    <div th:insert="/layouts/header :: header"></div>
+    <div th:insert="/layouts/navegation :: navegation"></div>
+
+
+
+    <!-- Navigation -->
+    <nav class="side pole">
+        <div class="navigation">
+            <ul></ul>
+        </div>
+    </nav>
+
+
+    <div id="demos" class="us-themes">
+        <!--box-themes-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="padding">
+                        <div class="pages-title">
+                            <h3>MATERIAL DE ESTUDIO</h3>
+                            <h1>LENGUA</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="sin-demo col-md-4 col-sm-6 col-xs-12">
+                    <h3><span
+                            style="text-decoration: underline; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">2020</span>
+                    </h3>
+                    <div class="image">
+                        <a target="_blank">
+                            <span class="demo-bg" style="background-image: url('img/literatureMaterial.jpg');"></span>
+                        </a>
+                    </div>
+                    <a th:href="@{/downloadFLiteraturePDF}" class="button">DESCARGAR</a>
+                </div>
+                <div class="sin-demo col-md-4 col-sm-6 col-xs-12">
+                    <h3><span
+                            style="text-decoration: underline; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">2021</span>
+                    </h3>
+                    <div class="image">
+                        <a target="_blank">
+                            <span class="demo-bg" style="background-image: url('img/literatureMaterial.jpg');"></span>
+                        </a>
+                    </div>
+                    <a th:href="@{/downloadSLiteraturePDF}" class="button">DESCARGAR</a>
+                </div>
+                <div class="sin-demo col-md-4 col-sm-6 col-xs-12">
+                    <h3><span
+                            style="text-decoration: underline; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">2022</span>
+                    </h3>
+                    <div class="image">
+                        <a target="_blank">
+                            <span class="demo-bg" style="background-image: url('img/literatureMaterial.jpg');"></span>
+                        </a>
+                    </div>
+                    <a th:href="@{/downloadTLiteraturePDF}" class="button">DESCARGAR</a>
+                </div>
+
+                <div th:insert="/layouts/footer :: footer"></div>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="/js/main.js"></script>
+
+</body>
+
+</html>
