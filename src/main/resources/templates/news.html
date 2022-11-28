@@ -2,88 +2,165 @@
 <html xmlns:th="https://www.thymeleaf.org">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/img/logo_edm_sin_fondo.png">
-    <title>Proyecto</title>
-    <link th:href="@{css/main.css}" rel="stylesheet" type="text/css" />
-    <link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+<meta charset="UTF-8" />
+<link rel="icon" href="/img/logo_edm_sin_fondo.png">
+<title>Proyecto</title>
+<link th:href="@{css/main.css}" rel="stylesheet" type="text/css" />
+<link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
 
 
 
 
-    <!-- Compressed Styles -->
-    <link href="/css/slides.min.css?41331" rel="stylesheet" type="text/css">
+<!-- Compressed Styles -->
+<link href="/css/slides.min.css?41331" rel="stylesheet" type="text/css">
 
-    <!-- Custom Styles -->
-    <!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
+<!-- Custom Styles -->
+<!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
 
-    <!-- jQuery 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- jQuery 3.3.1 -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Compressed Scripts -->
-    <script src="/js/slides.min.js?41331" type="text/javascript"></script>
+<!-- Compressed Scripts -->
+<script src="/js/slides.min.js?41331" type="text/javascript"></script>
 
-    <!-- Custom Scripts -->
-    <!-- <script src="js/custom.js" type="text/javascript"></script> -->
+<!-- Custom Scripts -->
+<!-- <script src="js/custom.js" type="text/javascript"></script> -->
 
-    <!-- Fonts and Material Icons -->
-    <link rel="stylesheet" as="font"
-        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons" />
+<!-- Fonts and Material Icons -->
+<link rel="stylesheet" as="font"
+	href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons" />
 
 </head>
 
-<body class="chain simplifiedMobile">
+<body class="slides animated chain simplifiedMobile ">
 
-    <div th:insert="/layouts/header :: header"></div>
-    <div th:insert="/layouts/navegation :: navegation"></div>
-
-
-
-    <!-- Navigation -->
-    <nav class="side pole">
-        <div class="navigation">
-            <ul></ul>
-        </div>
-    </nav>
-
-    <!-- Slide 6 (#95) -->
-    <section class="slide fade-6 kenBurns">
-        <div class="content">
-            <div class="container">
-                <div class="wrap">
-
-                    <div class="fix-6-12">
-                        <h1 class="ae-1 done" style="font-weight: bold;">Noticias</h1>
-                        <ul class="container">
-                            <li class="col-6-12 ae-4 done">
-                                <h2 class="margin-top-3">Inscripciones</h2>
-                                <p class="tiny opacity-6">ejemplo...</p>
-                            </li>
-
-                            <li class="col-6-12 ae-4 done">
-                                <h2 class="margin-top-3">Matriculacion Anual</h2>
-                                <p class="tiny opacity-6">ejemplo...</p>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="background" style="background-image:url(/img/background/edm.png)"></div>
-    </section>
+	<div th:insert="/layouts/header :: header"></div>
+	<div th:insert="/layouts/navegation :: navegation"></div>
 
 
 
+	<!-- Navigation -->
+	<nav class="side pole">
+		<div class="navigation">
+			<ul></ul>
+		</div>
+	</nav>
 
-    <div th:insert="/layouts/footer :: footer"></div>
+	<!-- Slide 6 (#95) -->
+	<section class="slide fade-6 kenBurns selected active animate">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<div class="fix-12-12">
+						<ul class="flex left">
+							<li class="col-6-12 fromBottomLeft ae-1">
+								<h1 class=" done">1) Preinscripción Online</h1>
+								<div class=" done">
+									<p class="opacity-9">Del 03 al 09 de Octubre, por medio del
+										SIU Guaraní.</p>
+									<a href="https://autogestion.guarani.unsj.edu.ar/"><img
+										src="/img/logo_guarani_alta.png"
+										class="shadow rounded  done" alt="Image"></a>
+								</div> <img src="/img/warning-form1.png" data-action="zoom"
+								class="shadow rounded  done" alt="Image">
+							</li>
+							<li class="col-6-12 fromBottomRight ae-2">
+								<h1 class=" done">2) Requisitos</h1>
+								<div class=" done">
+									<p class="opacity-9">Completar el formulario de
+										preinscripcion con los datos requeridos.</p>
+								</div>
+								<ul class="flex">
+									<li class="col-12-12 done">
+										<h3 class="margin-top-0">Correo Electronico</h3>
+										<p class="tiny opacity-9">Deberá ser valido, y debera
+											identificar el nombre y apellido del/la aspirante.</p>
+									</li>
+									<li class="col-12-12 done">
+										<h3 class="margin-top-0">Documentacion</h3>
+										<p class="tiny opacity-9">adjuntar en un archivo formato
+											PDF (tamaño 200 kbytes) el D.N.I del estudiante (anverso y
+											reverso) y constancias de alumnos regular de 7mo grado,
+											dirigida a la Escuela de Minas "Dr. Horacio Carrillo",
+											escaneados.</p>
+									</li>
+									<li class="col-12-12 done">
+										<h3 class="margin-top-0">Conectividad</h3>
+										<p class="tiny opacity-9">Declara si tiene conexion a
+											internet y dispositivo para conectarse</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="background"
+			style="background-image: url(/img/background/edm.png)"></div>
+	</section>
+
+	<!-- second slide -->
+	<section class="slide fade-6 kenBurns">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<ul class="flex left">
+						<li class="col-8-12 fromLeft">
+							<ul class="flex">
+								<li><img src="/img/unju-noticia.jpeg" data-action="zoom"
+									class="shadow rounded ae-1 done" alt="Image"></li>
+							</ul>
+							<ul class="flex">
+								<li class="center">
+									<h1 class="ae-2 done">Noticia 1</h1>
+									<div class="ae-3 done">
+										<p class="opacity-9">La UNJU ganó los Juegos Universitarios en el NOA.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="col-4-12 fromTop">
+							<ul class="flex ae-5">
+								<li class="col-12-12 center done"><img
+									src="/img/unju-noticia.jpeg" data-action="zoom"
+									class="shadow rounded done" alt="Image">
+									<h3 class="margin-top-0 center">Noticia 2</h3>
+									<p class="tiny opacity-9">La UNJU ganó los Juegos Universitarios en el NOA.</p></li>
+							</ul>
+							<ul class="flex ae-4">
+								<li class="col-12-12  center done"><img
+									src="/img/unju-noticia.jpeg" data-action="zoom"
+									class="shadow rounded  done" alt="Image">
+									<h3 class="margin-top-0 center">Noticia 3</h3>
+									<p class="tiny opacity-9">La UNJU ganó los Juegos Universitarios en el NOA.</p></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="background"
+			style="background-image: url(/img/background/edm.png)"></div>
+	</section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/main.js"></script>
+
+
+	<!--  <div th:insert="/layouts/footer :: footer"></div>-->
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/main.js"></script>
 
 </body>
+
 
 </html>

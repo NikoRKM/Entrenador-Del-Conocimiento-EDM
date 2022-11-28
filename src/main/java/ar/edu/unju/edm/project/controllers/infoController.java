@@ -17,5 +17,4 @@ public class infoController {
 
         return "news";
     }
-
 }
